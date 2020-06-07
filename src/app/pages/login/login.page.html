@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="login-credentials">
+          <ion-item>
+            <ion-label position="floating">Mobile Number</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="dark" position="floating">Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+          <ion-button
+            color="dark"
+            expand="full"
+            routerLink="/home"
+            class="ion-margin-top"
+            >Login</ion-button
+          >
+          <p>New user? <ion-text color="dark">Sign up here</ion-text></p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

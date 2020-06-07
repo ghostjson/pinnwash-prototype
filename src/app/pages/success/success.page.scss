@@ -1,0 +1,23 @@
+.book-now {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.center-items {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+ion-col,
+ion-row,
+ion-grid {
+  height: 100%;
+}
+
+ion-item {
+  width: 100%;
+}

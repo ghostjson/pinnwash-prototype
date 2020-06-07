@@ -1,0 +1,36 @@
+.car-info {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.car-name {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #2e2e2e;
+  width: 100%;
+}
+
+.car-name:focus {
+  outline: none;
+}
+
+ion-col,
+ion-row,
+ion-grid {
+  height: 100%;
+}
+
+ion-item {
+  width: 100%;
+}
+
+.item-has-focus {
+  --highlight-background: #2e2e2e;
+}
+ion-label {
+  color: #2e2e2e !important;
+}

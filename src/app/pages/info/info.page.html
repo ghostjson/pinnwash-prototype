@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Booking Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="car-info">
+          <ion-card style="width: 100%">
+            <ion-item>
+              <img src="./../../../assets/images/car.webp" alt="" />
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Car Name</ion-label>
+              <ion-input type="text" value="Hyundai"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Car Type</ion-label>
+              <ion-input type="text" value="SUV"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Car Model</ion-label>
+              <ion-input type="text" value="Creta"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Date</ion-label>
+              <ion-datetime
+                displayFormat="DD/MM/YYYY"
+                min="{{today}}"
+                max="2022-12-30"
+                value="{{today}}"
+              ></ion-datetime>
+            </ion-item>
+            <ion-item>
+              <ion-label>Time</ion-label>
+              <ion-datetime displayFormat="HH:mm"></ion-datetime>
+            </ion-item>
+            <ion-item>
+              <ion-text style="margin-left: auto;">
+                <p>
+                  Charge: $20
+                </p>
+              </ion-text>
+            </ion-item>
+          </ion-card>
+          <ion-button
+            color="dark"
+            expand="full"
+            routerLink="/map"
+            class="ion-margin-top"
+            >Next</ion-button
+          >
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

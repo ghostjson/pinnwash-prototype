@@ -1,0 +1,25 @@
+.login-credentials {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+ion-col,
+ion-row,
+ion-grid {
+  height: 100%;
+}
+
+ion-item {
+  width: 100%;
+}
+
+.item-has-focus {
+  --highlight-background: #2e2e2e;
+}
+ion-label {
+  color: #2e2e2e !important;
+}

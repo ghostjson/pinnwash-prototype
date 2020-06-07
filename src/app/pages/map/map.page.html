@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="dark" style="padding-top: 10px;">
+    <ion-title>Select your location</ion-title>
+    <ion-searchbar
+      [(ngModel)]="address"
+      (input)="searchAddress()"
+      color="dark"
+      #input
+      placeholder="Type your address"
+    ></ion-searchbar>
+    <ion-list color="dark">
+      <ion-item
+        *ngFor="let result of searchResults"
+        (click)="setResult(result.description)"
+      >
+        {{ result.description }}
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-header>
+
+<app-loading *ngIf="loading"></app-loading>
+
+<ion-content>
+  <div class="map-container">
+    <div #map id="map"></div>
+  </div>
+</ion-content>
+
+<div id="current-location" (click)="setCurrentLocation()">
+  <img src="./../../../assets/icon/current_location.svg" alt="" />
+</div>
+
+<ion-button
+  class="submit-button"
+  color="dark"
+  expand="full"
+  routerLink="/success"
+  >Select</ion-button
+>
